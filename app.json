@@ -1,0 +1,29 @@
+{
+  "name": "dwatson-pharmacy",
+  "description": "D.Watson Pharmacy Sales Dashboard - Complete Management System",
+  "repository": "https://github.com/Itxxwasi/DWATSON-DB",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment (production or development)",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Server port",
+      "value": "5000"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo '✅ D.Watson Pharmacy Dashboard deployed successfully!'"
+  }
+}
